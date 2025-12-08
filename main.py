@@ -301,10 +301,6 @@ def main():
         train_df, test_df
     )
 
-    output_path = 'submission.csv'
-    catboost_submission.to_csv(output_path, index=False)
-    print(f"\n   Submission сохранен в: {output_path}")
-
     print(f"\n   Submission shape: {catboost_submission.shape}")
     print("\n   Первые 5 строк submission:")
     print(catboost_submission.head())
